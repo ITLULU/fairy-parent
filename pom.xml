@@ -85,7 +85,7 @@
 
         <!--权限认证-->
         <jjwt.version>0.9.1</jjwt.version>
-        <jjwt.version>0.9.1</jjwt.version>
+        <jjwt-api.version>0.10.5</jjwt-api.version>
 
         <spring-security-jwt.version>1.0.9.RELEASE</spring-security-jwt.version>
         <aliyun-oss.version>3.8.0</aliyun-oss.version>
