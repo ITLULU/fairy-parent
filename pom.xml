@@ -85,6 +85,8 @@
 
         <!--权限认证-->
         <jjwt.version>0.9.1</jjwt.version>
+        <jjwt.version>0.9.1</jjwt.version>
+
         <spring-security-jwt.version>1.0.9.RELEASE</spring-security-jwt.version>
         <aliyun-oss.version>3.8.0</aliyun-oss.version>
 
@@ -256,6 +258,26 @@
                 <groupId>io.jsonwebtoken</groupId>
                 <artifactId>jjwt</artifactId>
                 <version>${jjwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-api</artifactId>
+                <version>${jjwt-api.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-impl</artifactId>
+                <version>${jjwt-api.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt-jackson</artifactId>
+                <version>${jjwt-api.version}</version>
+                <scope>runtime</scope>
             </dependency>
 
             <dependency>
