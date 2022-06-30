@@ -78,15 +78,14 @@
 
 
         <!--mq-->
-        <kafa.client.version>2.8.0</kafa.client.version>
-        <kafka.version>2.2.11.RELEASE</kafka.version>
+        <kafka-client.version>3.1.0</kafka-client.version>
         <rocketmq-client.version>4.7.1</rocketmq-client.version>
         <rocketmq-springboot.version>2.1.1</rocketmq-springboot.version>
 
         <!--权限认证-->
         <jjwt.version>0.9.1</jjwt.version>
         <jjwt-api.version>0.10.5</jjwt-api.version>
-
+        <nimbus-jose-jwt.version>8.16</nimbus-jose-jwt.version>
         <spring-security-jwt.version>1.0.9.RELEASE</spring-security-jwt.version>
         <aliyun-oss.version>3.8.0</aliyun-oss.version>
 
@@ -154,15 +153,12 @@
             </dependency>
 
 
-
-
             <!--Hutool Java工具包-->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
-
 
 
             <!-- MyBatis -->
@@ -205,8 +201,6 @@
                 <artifactId>pagehelper</artifactId>
                 <version>${pagehelper.version}</version>
             </dependency>
-
-
 
 
             <!--Swagger-UI API文档生产工具-->
@@ -284,6 +278,12 @@
                 <groupId>org.springframework.security</groupId>
                 <artifactId>spring-security-jwt</artifactId>
                 <version>${spring-security-jwt.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.nimbusds</groupId>
+                <artifactId>nimbus-jose-jwt</artifactId>
+                <version>${nimbus-jose-jwt.version}</version>
             </dependency>
 
             <!-- 阿里云OSS -->
@@ -366,6 +366,24 @@
                 <groupId>io.seata</groupId>
                 <artifactId>seata-spring-boot-starter</artifactId>
                 <version>${seata.version}</version>
+            </dependency>
+            <!--kafka-->
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-client</artifactId>
+                <version>${rocketmq-client.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocketmq-springboot.version}</version>
             </dependency>
 
         </dependencies>
