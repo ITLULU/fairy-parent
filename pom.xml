@@ -109,7 +109,7 @@
 
         <!--工具类-->
         <hutool.version>4.5.7</hutool.version>
-
+        <zookeeper.version>3.5.8</zookeeper.version>
     </properties>
 
     <dependencyManagement>
@@ -152,7 +152,16 @@
                 <version>${druid.version}</version>
             </dependency>
 
-
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>${zookeeper.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson</artifactId>
+                <version>${redision.version}</version>
+            </dependency>
             <!--Hutool Java工具包-->
             <dependency>
                 <groupId>cn.hutool</groupId>
