@@ -110,6 +110,8 @@
         <!--工具类-->
         <hutool.version>4.5.7</hutool.version>
         <zookeeper.version>3.5.8</zookeeper.version>
+
+        <trance.version>8.4.0</trance.version>
     </properties>
 
     <dependencyManagement>
