@@ -347,12 +347,8 @@
             </dependency>
 
             <dependency>
-                <groupId>commons-io</groupId>
-<<<<<<< HEAD
+                <groupId>commons-fileupload</groupId>
                 <artifactId>commons-fileupload</artifactId>
-=======
-                <artifactId>commons-io</artifactId>
->>>>>>> b5c341b25bff700b5efaa60da98417e0edbd297b
                 <version>${commons-fileupload.version}</version>
             </dependency>
             <dependency>
